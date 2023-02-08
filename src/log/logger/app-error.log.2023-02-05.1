@@ -1,0 +1,56 @@
+[2023-02-05T00:01:00.939] [ERROR] app - Unknown column 'id_' in 'where clause'
+[2023-02-05T00:01:10.934] [ERROR] app - Unknown column 'id_' in 'where clause'
+[2023-02-05T00:01:20.937] [ERROR] app - Unknown column 'id_' in 'where clause'
+[2023-02-05T00:01:30.952] [ERROR] app - Unknown column 'id_' in 'where clause'
+[2023-02-05T00:01:40.964] [ERROR] app - Unknown column 'id_' in 'where clause'
+[2023-02-05T00:01:50.970] [ERROR] app - Unknown column 'id_' in 'where clause'
+[2023-02-05T00:02:00.971] [ERROR] app - Unknown column 'id_' in 'where clause'
+[2023-02-05T00:10:46.129] [ERROR] app - ------Error: Unknown column 'id_' in 'where clause'------
+[2023-02-05T00:10:56.132] [ERROR] app - ------Error: Unknown column 'id_' in 'where clause'------
+[2023-02-05T00:11:06.141] [ERROR] app - ------Error: Unknown column 'id_' in 'where clause'------
+[2023-02-05T00:11:17.923] [ERROR] app - Error: Unknown column 'id_' in 'where clause'
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Timeout._onTimeout (C:\Users\codercy\Desktop\博客系统\blog-node\src\works\incrementRuningTime.js:15:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: '\n      UPDATE sta SET run_hours = ? WHERE id_ = ?\n    ',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'id_' in 'where clause'"
+}
+[2023-02-05T00:11:27.915] [ERROR] app - Error: Unknown column 'id_' in 'where clause'
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Timeout._onTimeout (C:\Users\codercy\Desktop\博客系统\blog-node\src\works\incrementRuningTime.js:15:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: '\n      UPDATE sta SET run_hours = ? WHERE id_ = ?\n    ',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'id_' in 'where clause'"
+}
+[2023-02-05T00:11:37.930] [ERROR] app - Error: Unknown column 'id_' in 'where clause'
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Timeout._onTimeout (C:\Users\codercy\Desktop\博客系统\blog-node\src\works\incrementRuningTime.js:15:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sql: '\n      UPDATE sta SET run_hours = ? WHERE id_ = ?\n    ',
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'id_' in 'where clause'"
+}
+[2023-02-05T23:21:44.300] [ERROR] app - Error: 登录过期,请重新登录
+    at verifyToken (C:\Users\codercy\Desktop\博客系统\blog-node\src\middleware\auth.middleware.js:18:38)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-05T23:23:09.585] [ERROR] app - Error: 登录过期,请重新登录
+    at verifyToken (C:\Users\codercy\Desktop\博客系统\blog-node\src\middleware\auth.middleware.js:18:38)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-05T23:36:01.398] [ERROR] app - TypeError: Cannot read properties of undefined (reading 'length')
+    at C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\link.js:18:33
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2023-02-05T23:37:08.067] [ERROR] app - TypeError: Cannot read properties of undefined (reading 'length')
+    at C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\link.js:19:33
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)

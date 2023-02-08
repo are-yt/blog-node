@@ -1,0 +1,390 @@
+[2023-02-08T15:51:58.091] [ERROR] app - ReferenceError: axios is not defined
+    at city (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:329:11)
+    at new Promise (<anonymous>)
+    at C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:328:16
+    at sendComment (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:344:9)
+    at dispatch (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:42:32)
+    at verifyToken (C:\Users\codercy\Desktop\博客系统\blog-node\src\middleware\auth.middleware.js:16:15)
+    at dispatch (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:34:12
+[2023-02-08T16:39:07.628] [ERROR] app - TypeError: endorse is not iterable (cannot read property null)
+    at Articles.getCommentList (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:405:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getCommentList (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:361:20)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-08T16:39:28.516] [ERROR] app - TypeError: endorse is not iterable (cannot read property null)
+    at Articles.getCommentList (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:405:27)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getCommentList (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:361:20)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-08T17:43:52.374] [ERROR] app - AxiosError: getaddrinfo ENOTFOUND restapi.amap.com
+    at Function.AxiosError.from (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\axios\dist\node\axios.cjs:789:14)
+    at RedirectableRequest.handleRequestError (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\axios\dist\node\axios.cjs:2744:25)
+    at RedirectableRequest.emit (node:events:390:28)
+    at ClientRequest.eventHandlers.<computed> (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\follow-redirects\index.js:14:24)
+    at ClientRequest.emit (node:events:390:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:390:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  hostname: 'restapi.amap.com',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/1.2.5',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    url: 'https://restapi.amap.com/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+    method: 'get',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'restapi.amap.com',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/v3/ip',
+      search: '?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.2.5\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: restapi.amap.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'restapi.amap.com',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'https://restapi.amap.com/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND restapi.amap.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'restapi.amap.com'
+  }
+}
+[2023-02-08T17:45:00.086] [ERROR] app - AxiosError: getaddrinfo ENOTFOUND restapi.amap.com
+    at Function.AxiosError.from (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\axios\dist\node\axios.cjs:789:14)
+    at RedirectableRequest.handleRequestError (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\axios\dist\node\axios.cjs:2744:25)
+    at RedirectableRequest.emit (node:events:390:28)
+    at ClientRequest.eventHandlers.<computed> (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\follow-redirects\index.js:14:24)
+    at ClientRequest.emit (node:events:390:28)
+    at TLSSocket.socketErrorListener (node:_http_client:447:9)
+    at TLSSocket.emit (node:events:390:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  hostname: 'restapi.amap.com',
+  syscall: 'getaddrinfo',
+  code: 'ENOTFOUND',
+  errno: -3008,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: null },
+    validateStatus: [Function: validateStatus],
+    headers: AxiosHeaders {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/1.2.5',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    url: 'https://restapi.amap.com/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+    method: 'get',
+    data: undefined
+  },
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Function: handleRequestSocket]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+      method: 'GET',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'restapi.amap.com',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/v3/ip',
+      search: '?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 0,
+    _requestBodyBuffers: [],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      socket: [TLSSocket],
+      _header: 'GET /v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861 HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'User-Agent: axios/1.2.5\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: restapi.amap.com\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'restapi.amap.com',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'https://restapi.amap.com/v3/ip?ip=127.0.0.1&output=json&key=74ed4546b6181e20bfdaa6f96ed3f861',
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: getaddrinfo ENOTFOUND restapi.amap.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'restapi.amap.com'
+  }
+}
+[2023-02-08T18:11:30.096] [ERROR] app - Error: Data too long for column 'content' at row 1
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Articles.sendComment (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:371:36)
+    at sendComment (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:347:42)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async verifyToken (C:\Users\codercy\Desktop\博客系统\blog-node\src\middleware\auth.middleware.js:16:9)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9) {
+  code: 'ER_DATA_TOO_LONG',
+  errno: 1406,
+  sql: '\n' +
+    '      INSERT INTO comment_article (content, user_id, article_id, city, reply_id, parent_id)\n' +
+    '        VALUES (?, ?, ?, ?, ?, ?)\n' +
+    '    ',
+  sqlState: '22001',
+  sqlMessage: "Data too long for column 'content' at row 1"
+}

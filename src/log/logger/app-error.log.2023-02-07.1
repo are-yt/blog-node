@@ -1,0 +1,110 @@
+[2023-02-07T13:42:33.638] [ERROR] app - ReferenceError: Cannot access 'index' before initialization
+    at C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:190:63
+    at Array.findIndex (<anonymous>)
+    at Articles.getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:190:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:232:20)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-07T13:44:06.798] [ERROR] app - ReferenceError: Cannot access 'index' before initialization
+    at C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:190:63
+    at Array.findIndex (<anonymous>)
+    at Articles.getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:190:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:232:20)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-07T14:00:04.039] [ERROR] app - ReferenceError: res is not defined
+    at Articles.getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:213:63)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:232:20)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-07T14:00:16.992] [ERROR] app - TypeError: Cannot read properties of undefined (reading 'length')
+    at Articles.getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:215:32)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:232:20)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9)
+[2023-02-07T14:02:28.371] [ERROR] app - Error: Table 'cyblog2.tag' doesn't exist
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Articles.getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:219:51)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getHotList (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:232:20)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9) {
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sql: '\n          SELECT name FROM tag WHERE id = ?\n        ',
+  sqlState: '42S02',
+  sqlMessage: "Table 'cyblog2.tag' doesn't exist"
+}
+[2023-02-07T16:08:01.492] [ERROR] app - Error: Bind parameters must be array if namedPlaceholders parameter is not enabled
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Articles.getFiltrateArticleForTag (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:230:46)
+    at getFiltrateArticle (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:257:42)
+    at dispatch (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:11) {
+  code: undefined,
+  errno: undefined,
+  sql: undefined,
+  sqlState: undefined,
+  sqlMessage: undefined
+}
+[2023-02-07T17:57:52.977] [ERROR] app - Error: Bind parameters must be array if namedPlaceholders parameter is not enabled
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Articles.getFiltrateArticleForCate (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:311:46)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getFiltrateArticle (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:275:22)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9) {
+  code: undefined,
+  errno: undefined,
+  sql: undefined,
+  sqlState: undefined,
+  sqlMessage: undefined
+}
+[2023-02-07T17:59:01.557] [ERROR] app - Error: Bind parameters must be array if namedPlaceholders parameter is not enabled
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Articles.getFiltrateArticleForCate (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:311:46)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getFiltrateArticle (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:275:22)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9) {
+  code: undefined,
+  errno: undefined,
+  sql: undefined,
+  sqlState: undefined,
+  sqlMessage: undefined
+}
+[2023-02-07T22:20:25.372] [ERROR] app - Error: Malformed communication packet.
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Articles.addClickCount (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:361:36)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async addClickCount (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:308:19)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9) {
+  code: 'ER_MALFORMED_PACKET',
+  errno: 1835,
+  sql: '\n      UPDATE articles SET viewCount = ? WHERE id = ?\n    ',
+  sqlState: 'HY000',
+  sqlMessage: 'Malformed communication packet.'
+}
+[2023-02-07T22:22:08.498] [ERROR] app - Error: Malformed communication packet.
+    at PromisePool.execute (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\mysql2\promise.js:369:22)
+    at Articles.addClickCount (C:\Users\codercy\Desktop\博客系统\blog-node\src\services\articles.js:362:36)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async addClickCount (C:\Users\codercy\Desktop\博客系统\blog-node\src\controller\articles.js:308:19)
+    at async bodyParser (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa-bodyparser\index.js:95:5)
+    at async cors (C:\Users\codercy\Desktop\博客系统\blog-node\node_modules\koa2-cors\dist\index.js:91:9) {
+  code: 'ER_MALFORMED_PACKET',
+  errno: 1835,
+  sql: '\n      UPDATE articles SET viewCount = ? WHERE id = ?\n    ',
+  sqlState: 'HY000',
+  sqlMessage: 'Malformed communication packet.'
+}
